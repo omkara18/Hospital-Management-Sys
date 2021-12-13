@@ -51,7 +51,12 @@ public class home extends javax.swing.JFrame {
         addressButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informationDignosis.png"))); // NOI18N
         addressButton.setText("     Add Diagnosis Information");
         addressButton.setToolTipText("");
-        getContentPane().add(addressButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 320, 70));
+        addressButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addressButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(addressButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 320, 90));
 
         updateButton.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 14)); // NOI18N
         updateButton.setForeground(new java.awt.Color(102, 102, 102));
@@ -63,7 +68,7 @@ public class home extends javax.swing.JFrame {
                 updateButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 450, 320, 60));
+        getContentPane().add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 320, 90));
 
         exitButton.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 14)); // NOI18N
         exitButton.setForeground(new java.awt.Color(102, 102, 102));
@@ -74,7 +79,7 @@ public class home extends javax.swing.JFrame {
                 exitButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 660, 320, 60));
+        getContentPane().add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 670, 320, 80));
 
         addPaitentButton.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 14)); // NOI18N
         addPaitentButton.setForeground(new java.awt.Color(102, 102, 102));
@@ -85,7 +90,7 @@ public class home extends javax.swing.JFrame {
                 addPaitentButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(addPaitentButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 320, 70));
+        getContentPane().add(addPaitentButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 320, 100));
 
         hospitalInfo.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 14)); // NOI18N
         hospitalInfo.setForeground(new java.awt.Color(102, 102, 102));
@@ -96,7 +101,7 @@ public class home extends javax.swing.JFrame {
                 hospitalInfoActionPerformed(evt);
             }
         });
-        getContentPane().add(hospitalInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, 320, 60));
+        getContentPane().add(hospitalInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, 320, 90));
 
         historyPatient.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 14)); // NOI18N
         historyPatient.setForeground(new java.awt.Color(102, 102, 102));
@@ -107,7 +112,7 @@ public class home extends javax.swing.JFrame {
                 historyPatientActionPerformed(evt);
             }
         });
-        getContentPane().add(historyPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 320, 70));
+        getContentPane().add(historyPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 320, 90));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/home_background.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -145,6 +150,11 @@ public class home extends javax.swing.JFrame {
         // TODO add your handling code here:
         new aboutHospital().setVisible(true);
     }//GEN-LAST:event_hospitalInfoActionPerformed
+
+    private void addressButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressButtonActionPerformed
+        // TODO add your handling code here:
+        new addDignosis().setVisible(true);
+    }//GEN-LAST:event_addressButtonActionPerformed
 
     /**
      * @param args the command line arguments

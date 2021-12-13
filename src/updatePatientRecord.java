@@ -98,7 +98,7 @@ public class updatePatientRecord extends javax.swing.JFrame {
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 372, -1, -1));
 
         patientIDField.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 18)); // NOI18N
-        getContentPane().add(patientIDField, new org.netbeans.lib.awtextra.AbsoluteConstraints(271, 51, 425, -1));
+        getContentPane().add(patientIDField, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, 425, -1));
 
         nameField.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 18)); // NOI18N
         getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(271, 102, 425, -1));
